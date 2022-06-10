@@ -1,0 +1,26 @@
+{
+  "name": "cypres-login",
+  "version": "1.0.0",
+  "description": "Automation Login page with Cypress & Cucumber",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thanchila-pirasanthan/cypress-log-in.git"
+  },
+  "keywords": [
+    "cypress",
+    "cucumber"
+  ],
+  "author": "Thanchila Pirasanthan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thanchila-pirasanthan/cypress-log-in/issues"
+  },
+  "homepage": "https://github.com/thanchila-pirasanthan/cypress-log-in#readme",
+  "dependencies": {
+    "cypress": "^10.0.3"
+  }
+}
