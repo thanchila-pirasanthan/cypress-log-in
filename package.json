@@ -22,5 +22,11 @@
   "homepage": "https://github.com/thanchila-pirasanthan/cypress-log-in#readme",
   "dependencies": {
     "cypress": "^10.0.3"
+  },
+  "devDependencies": {
+    "cypress-cucumber-preprocessor": "^4.3.1"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": false
   }
 }
