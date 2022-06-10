@@ -13,3 +13,11 @@ Given('the user click {string}', (field) => {
 Given('the url contains {string}', (url) => {
   cy.url().should('include', url);
 });
+
+Given('the field {string} contains {string}', (field, data) => {
+  cy.get(field).should('be.visible').contains(data);
+});
+
+Given('the field {string} is visible', (field) => {
+  cy.get(field).should('be.visible');
+});

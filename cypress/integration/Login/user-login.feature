@@ -8,3 +8,18 @@ Feature: Login
         And the user enters data 'Password123' into field '#password'
         When the user click '#submit'
         Then the url contains '/logged-in-successfully/'
+
+    Scenario: Test case 2: Positive LogIn contains the right elements
+        Given the field '#username' is visible
+        And  the field '#password' is visible
+        And  the field '#submit' is visible
+
+    Scenario Outline: Test case 3: Negative <test> test
+        Given the user enters data '<username>' into field '#username'
+        And the user enters data '<password' into field '#password'
+        When the user click '#submit'
+        Then the field '#error' contains '<error>'
+        Examples:
+            | test     | username      | password          | error                     |
+            | username | incorrectUser | Password123       | Your username is invalid! |
+            | password | student       | incorrectPassword | Your password is invalid! |
